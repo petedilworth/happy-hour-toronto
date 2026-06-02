@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The 4PM Index · Toronto Happy Hours</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="header-top">
+    <div class="logo">The 4PM Index <span>Toronto · Drinks Only</span></div>
+    <div class="view-toggle">
+      <button class="view-btn active" data-view="map">Map</button>
+      <button class="view-btn" data-view="list">List</button>
+    </div>
+  </div>
+  <div class="filter-bar">
+    <button class="toggle-btn" id="open-now-btn">
+      <span class="toggle-dot"></span>
+      Open Now
+    </button>
+    <div class="filter-divider"></div>
+    <button class="vibe-chip" data-vibe="sidewalk-patio">Sidewalk Patio</button>
+    <button class="vibe-chip" data-vibe="rooftop">Rooftop</button>
+    <button class="vibe-chip" data-vibe="lively">Lively</button>
+    <button class="vibe-chip" data-vibe="quiet">Quiet</button>
+    <button class="vibe-chip" data-vibe="dive-bar">Dive Bar</button>
+    <button class="vibe-chip" data-vibe="sports-tv">Sports / TV</button>
+    <button class="vibe-chip" data-vibe="live-music">Live Music</button>
+    <button class="vibe-chip" data-vibe="upscale">Upscale</button>
+    <div class="filter-divider"></div>
+    <select class="neighbourhood-select" id="neighbourhood-select">
+      <option value="">All Downtown</option>
+      <option value="Financial District">Financial District</option>
+      <option value="Entertainment District">Entertainment District</option>
+      <option value="King West">King West</option>
+      <option value="Harbourfront">Harbourfront</option>
+      <option value="Old Town">Old Town</option>
+    </select>
+    <button class="near-me-btn" id="near-me-btn">📍 Near Me</button>
+    <button class="clear-btn" id="clear-btn">Clear all</button>
+  </div>
+</header>
+
+<div class="stats-bar" id="stats-bar"></div>
+
+<div class="main">
+  <div id="map-wrapper"><div id="map"></div></div>
+  <div id="list-view"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="data.js"></script>
+<script>
+
+// ─── State ───────────────────────────────────────────────────────────────────
+const state = {
+  openNow: false,
+  vibes: new Set(),
+  view: 'map',
+  userLat: null,
+  userLng: null,
+  nearbyActive: false
+};
+
+const NEIGHBOURHOOD_CENTROIDS = {
+  'Financial District':    [43.6490, -79.3800],
+  'Entertainment District':[43.6455, -79.3910],
+  'King West':             [43.6444, -79.4045],
+  'Harbourfront':          [43.6383, -79.3849],
+  'Old Town':              [43.6529, -79.3714]
+};
+
+// ─── Map init ────────────────────────────────────────────────────────────────
+const map = L.map('map', {
+  zoomControl: true,
+  attributionControl: true
+}).setView([43.6455, -79.3900], 14);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  maxZoom: 19
+}).addTo(map);
+
+const markersLayer = L.layerGroup().addTo(map);
+
+function makeMarkerIcon(color) {
+  return L.divIcon({
+    className: '',
+    html: `<div style="width:13px;height:13px;border-radius:50%;background:${color};border:2.5px solid rgba(255,255,255,0.4);box-shadow:0 2px 8px rgba(0,0,0,0.6)"></div>`,
+    iconSize: [13, 13],
+    iconAnchor: [6, 6],
+    popupAnchor: [0, -10]
+  });
+}
+
+// ─── Time helpers ─────────────────────────────────────────────────────────────
+function isOpenNow(venue) {
+  const now = new Date();
+  const dayNames = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  const today = dayNames[now.getDay()];
+  if (!venue.days.includes(today)) return false;
+  const nowMins = now.getHours() * 60 + now.getMinutes();
+  const [sh, sm] = venue.time_start.split(':').map(Number);
+  const [eh, em] = venue.time_end.split(':').map(Number);
+  return nowMins >= sh * 60 + sm && nowMins < eh * 60 + em;
+}
+
+function fmtTime(t) {
+  const [h, m] = t.split(':').map(Number);
+  const suffix = h >= 12 ? 'PM' : 'AM';
+  const h12 = h % 12 || 12;
+  return m ? `${h12}:${String(m).padStart(2, '0')} ${suffix}` : `${h12} ${suffix}`;
+}
+
+function fmtDays(days) {
+  if (days.length === 7) return 'Daily';
+  const isWeekdays = days.length === 5 && !days.includes('Sat') && !days.includes('Sun');
+  if (isWeekdays) return 'Mon–Fri';
+  const isMonSat = days.length === 6 && !days.includes('Sun');
+  if (isMonSat) return 'Mon–Sat';
+  if (days[0] === 'Tue' && days.length === 5) return 'Tue–Sat';
+  return days.join(', ');
+}
+
+function fmtScrapeDate(d) {
+  const [y, m] = d.split('-');
+  const months = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  return `${months[+m]} ${y}`;
+}
+
+// ─── Distance ─────────────────────────────────────────────────────────────────
+function haversine(lat1, lng1, lat2, lng2) {
+  const R = 6371;
+  const toRad = x => x * Math.PI / 180;
+  const dLat = toRad(lat2 - lat1);
+  const dLng = toRad(lng2 - lng1);
+  const a = Math.sin(dLat / 2) ** 2
+    + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+function getRefPoint() {
+  if (state.nearbyActive && state.userLat !== null) return [state.userLat, state.userLng];
+  const sel = document.getElementById('neighbourhood-select').value;
+  if (sel && NEIGHBOURHOOD_CENTROIDS[sel]) return NEIGHBOURHOOD_CENTROIDS[sel];
+  return null;
+}
+
+// ─── Filter ───────────────────────────────────────────────────────────────────
+function filterVenues() {
+  return window.venues.filter(v => {
+    if (state.openNow && !isOpenNow(v)) return false;
+    if (state.vibes.size > 0 && ![...state.vibes].every(vibe => v.vibes.includes(vibe))) return false;
+    return true;
+  });
+}
+
+// ─── Render map ───────────────────────────────────────────────────────────────
+function renderMap(venues) {
+  markersLayer.clearLayers();
+  venues.forEach(v => {
+    const open = isOpenNow(v);
+    const color = open ? '#10B981' : '#F59E0B';
+    const marker = L.marker([v.lat, v.lng], { icon: makeMarkerIcon(color) });
+    marker.bindPopup(
+      `<div class="popup-name">${v.name}</div>` +
+      `<div class="popup-address">${v.address}</div>` +
+      `<div class="popup-deal">${v.deal}</div>` +
+      `<div class="popup-hours">${fmtDays(v.days)} · ${fmtTime(v.time_start)}–${fmtTime(v.time_end)}</div>` +
+      `<div class="popup-vibes">${v.vibes.map(vibe => `<span class="vibe-tag">${vibe}</span>`).join('')}</div>`,
+      { maxWidth: 240 }
+    );
+    markersLayer.addLayer(marker);
+  });
+}
+
+// ─── Render list ──────────────────────────────────────────────────────────────
+function renderList(venues) {
+  const el = document.getElementById('list-view');
+
+  if (venues.length === 0) {
+    el.innerHTML = `<div class="empty-state"><h3>No spots match</h3><p>Try clearing some filters</p></div>`;
+    return;
+  }
+
+  const ref = getRefPoint();
+  const sorted = ref
+    ? [...venues].sort((a, b) =>
+        haversine(ref[0], ref[1], a.lat, a.lng) - haversine(ref[0], ref[1], b.lat, b.lng))
+    : venues;
+
+  el.innerHTML = sorted.map(v => {
+    const open = isOpenNow(v);
+    const ref = getRefPoint();
+    const distStr = ref
+      ? ` · ${haversine(ref[0], ref[1], v.lat, v.lng).toFixed(1)} km`
+      : '';
+    return `
+      <div class="venue-card${open ? ' open-now' : ''}">
+        <div class="card-top">
+          <div class="card-name">${v.name}</div>
+          ${open ? '<span class="open-badge">OPEN NOW</span>' : ''}
+        </div>
+        <div class="card-meta">${v.neighbourhood}${distStr}</div>
+        <div class="card-hours">${fmtDays(v.days)} · ${fmtTime(v.time_start)}–${fmtTime(v.time_end)}</div>
+        <div class="card-deal">${v.deal}</div>
+        <div class="card-footer">
+          <div class="card-vibes">${v.vibes.map(vibe => `<span class="vibe-tag">${vibe}</span>`).join('')}</div>
+          <div class="card-updated">Updated ${fmtScrapeDate(v.last_scraped)}</div>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+// ─── Stats bar ────────────────────────────────────────────────────────────────
+function updateStats(venues) {
+  const openCount = venues.filter(isOpenNow).length;
+  const latest = fmtScrapeDate(
+    [...new Set(window.venues.map(v => v.last_scraped))].sort().pop()
+  );
+  document.getElementById('stats-bar').innerHTML =
+    `<b>${venues.length}</b> spots · <b>${openCount}</b> open now · Updated <b>${latest}</b>`;
+}
+
+// ─── Apply filters ────────────────────────────────────────────────────────────
+function applyFilters() {
+  const venues = filterVenues();
+  renderMap(venues);
+  renderList(venues);
+  updateStats(venues);
+}
+
+// ─── View switching ───────────────────────────────────────────────────────────
+function setView(v) {
+  state.view = v;
+  document.querySelectorAll('.view-btn').forEach(b =>
+    b.classList.toggle('active', b.dataset.view === v));
+
+  if (window.innerWidth < 900) {
+    const listEl = document.getElementById('list-view');
+    const mapWrapper = document.getElementById('map-wrapper');
+    const showList = v === 'list';
+    listEl.classList.toggle('active', showList);
+    mapWrapper.style.display = showList ? 'none' : '';
+    if (!showList) setTimeout(() => map.invalidateSize(), 50);
+  }
+}
+
+// ─── Event listeners ──────────────────────────────────────────────────────────
+document.getElementById('open-now-btn').addEventListener('click', function () {
+  state.openNow = !state.openNow;
+  this.classList.toggle('active', state.openNow);
+  applyFilters();
+});
+
+document.querySelectorAll('.vibe-chip').forEach(chip => {
+  chip.addEventListener('click', function () {
+    const vibe = this.dataset.vibe;
+    if (state.vibes.has(vibe)) {
+      state.vibes.delete(vibe);
+      this.classList.remove('active');
+    } else {
+      state.vibes.add(vibe);
+      this.classList.add('active');
+    }
+    applyFilters();
+  });
+});
+
+document.getElementById('neighbourhood-select').addEventListener('change', function () {
+  state.nearbyActive = false;
+  document.getElementById('near-me-btn').classList.remove('active');
+  const centroid = NEIGHBOURHOOD_CENTROIDS[this.value];
+  if (centroid) {
+    map.setView(centroid, 15);
+  } else {
+    map.setView([43.6455, -79.3900], 14);
+  }
+  applyFilters();
+});
+
+document.getElementById('near-me-btn').addEventListener('click', function () {
+  if (!navigator.geolocation) {
+    alert('Geolocation is not supported by your browser.');
+    return;
+  }
+  navigator.geolocation.getCurrentPosition(
+    pos => {
+      state.userLat = pos.coords.latitude;
+      state.userLng = pos.coords.longitude;
+      state.nearbyActive = true;
+      document.getElementById('neighbourhood-select').value = '';
+      this.classList.add('active');
+      map.setView([state.userLat, state.userLng], 15);
+      applyFilters();
+    },
+    () => {
+      alert('Unable to get your location. Make sure location access is enabled.');
+    }
+  );
+});
+
+document.getElementById('clear-btn').addEventListener('click', function () {
+  state.openNow = false;
+  state.vibes.clear();
+  state.nearbyActive = false;
+  state.userLat = null;
+  state.userLng = null;
+  document.getElementById('open-now-btn').classList.remove('active');
+  document.querySelectorAll('.vibe-chip').forEach(c => c.classList.remove('active'));
+  document.getElementById('neighbourhood-select').value = '';
+  document.getElementById('near-me-btn').classList.remove('active');
+  map.setView([43.6455, -79.3900], 14);
+  applyFilters();
+});
+
+document.querySelectorAll('.view-btn').forEach(btn => {
+  btn.addEventListener('click', () => setView(btn.dataset.view));
+});
+
+// ─── Init ─────────────────────────────────────────────────────────────────────
+applyFilters();
+
+</script>
+</body>
+</html>
