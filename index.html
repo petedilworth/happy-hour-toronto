@@ -211,7 +211,8 @@ function renderMap(venues) {
       `<div class="popup-address">${v.address}</div>` +
       `<div class="popup-deal">${v.deal}</div>` +
       `<div class="popup-hours">${fmtDays(v.days)} · ${fmtTime(v.time_start)}–${fmtTime(v.time_end)}</div>` +
-      `<div class="popup-vibes">${v.vibes.map(vibe => `<span class="vibe-tag">${vibe}</span>`).join('')}</div>`,
+      `<div class="popup-vibes">${v.vibes.map(vibe => `<span class="vibe-tag">${vibe}</span>`).join('')}</div>` +
+      `<div class="popup-source"><a href="${v.source_url}" target="_blank" rel="noopener">View source ↗</a></div>`,
       { maxWidth: 240 }
     );
     markersLayer.addLayer(marker);

@@ -424,7 +424,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 3px;
+  margin-bottom: 7px;
 }
+
+.popup-source a {
+  font-size: 0.68rem;
+  color: var(--amber);
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.popup-source a:hover { opacity: 1; }
 
 /* ─── Mobile ─── */
 @media (max-width: 899px) {
