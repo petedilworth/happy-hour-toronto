@@ -33,12 +33,32 @@
     <button class="vibe-chip" data-vibe="upscale">Upscale</button>
     <div class="filter-divider"></div>
     <select class="neighbourhood-select" id="neighbourhood-select">
-      <option value="">All Downtown</option>
+      <option value="">All Toronto</option>
       <option value="Financial District">Financial District</option>
       <option value="Entertainment District">Entertainment District</option>
       <option value="King West">King West</option>
       <option value="Harbourfront">Harbourfront</option>
       <option value="Old Town">Old Town</option>
+      <option value="St Lawrence">St Lawrence</option>
+      <option value="Ossington">Ossington</option>
+      <option value="Queen West">Queen West</option>
+      <option value="Parkdale">Parkdale</option>
+      <option value="Dundas West">Dundas West</option>
+      <option value="Kensington Market">Kensington Market</option>
+      <option value="Little Italy">Little Italy</option>
+      <option value="Annex">Annex</option>
+      <option value="Bloor West">Bloor West</option>
+      <option value="Yorkville">Yorkville</option>
+      <option value="Cabbagetown">Cabbagetown</option>
+      <option value="Yonge-Bloor">Yonge-Bloor</option>
+      <option value="Midtown">Midtown</option>
+      <option value="Church-Wellesley">Church-Wellesley</option>
+      <option value="Leslieville">Leslieville</option>
+      <option value="Riverside">Riverside</option>
+      <option value="Distillery District">Distillery District</option>
+      <option value="Corktown">Corktown</option>
+      <option value="Liberty Village">Liberty Village</option>
+      <option value="Geary Ave">Geary Ave</option>
     </select>
     <button class="near-me-btn" id="near-me-btn">📍 Near Me</button>
     <button class="clear-btn" id="clear-btn">Clear all</button>
@@ -70,15 +90,35 @@ const NEIGHBOURHOOD_CENTROIDS = {
   'Financial District':    [43.6490, -79.3800],
   'Entertainment District':[43.6455, -79.3910],
   'King West':             [43.6444, -79.4045],
-  'Harbourfront':          [43.6383, -79.3849],
-  'Old Town':              [43.6529, -79.3714]
+  'Harbourfront':          [43.6388, -79.3820],
+  'Old Town':              [43.6515, -79.3715],
+  'St Lawrence':           [43.6470, -79.3730],
+  'Ossington':             [43.6540, -79.4220],
+  'Queen West':            [43.6480, -79.4050],
+  'Parkdale':              [43.6430, -79.4330],
+  'Dundas West':           [43.6537, -79.4440],
+  'Kensington Market':     [43.6565, -79.4010],
+  'Little Italy':          [43.6601, -79.4080],
+  'Annex':                 [43.6615, -79.4200],
+  'Bloor West':            [43.6643, -79.4270],
+  'Yorkville':             [43.6710, -79.3920],
+  'Cabbagetown':           [43.6647, -79.3726],
+  'Yonge-Bloor':           [43.6680, -79.3815],
+  'Midtown':               [43.6878, -79.3973],
+  'Church-Wellesley':      [43.6630, -79.3775],
+  'Leslieville':           [43.6570, -79.3155],
+  'Riverside':             [43.6580, -79.3480],
+  'Distillery District':   [43.6504, -79.3581],
+  'Corktown':              [43.6503, -79.3660],
+  'Liberty Village':       [43.6385, -79.4135],
+  'Geary Ave':             [43.6789, -79.4126]
 };
 
 // ─── Map init ────────────────────────────────────────────────────────────────
 const map = L.map('map', {
   zoomControl: true,
   attributionControl: true
-}).setView([43.6455, -79.3900], 14);
+}).setView([43.6550, -79.3900], 13);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
@@ -278,7 +318,7 @@ document.getElementById('neighbourhood-select').addEventListener('change', funct
   if (centroid) {
     map.setView(centroid, 15);
   } else {
-    map.setView([43.6455, -79.3900], 14);
+    map.setView([43.6550, -79.3900], 13);
   }
   applyFilters();
 });
@@ -314,7 +354,7 @@ document.getElementById('clear-btn').addEventListener('click', function () {
   document.querySelectorAll('.vibe-chip').forEach(c => c.classList.remove('active'));
   document.getElementById('neighbourhood-select').value = '';
   document.getElementById('near-me-btn').classList.remove('active');
-  map.setView([43.6455, -79.3900], 14);
+  map.setView([43.6550, -79.3900], 13);
   applyFilters();
 });
 
