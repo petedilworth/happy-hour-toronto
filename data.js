@@ -5,6 +5,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "50% off wine · $6 domestic beer · $8 cocktails",
     vibes: ["lively","sports-tv","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://kingtaps.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -13,6 +14,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$6.95 draught · $10 wine · $12 cocktails",
     vibes: ["lively","upscale","sidewalk-patio"], last_scraped: "2023-04",
+    website_url: "https://www.therabbitholepub.ca",
     source_url: "https://www.tastetoronto.com/guides/the-best-places-to-get-happy-hour-drinks-in-the-financial-district"
   },
   {
@@ -21,6 +23,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$6 domestic · $7 craft beer · $9 cocktails",
     vibes: ["lively","sports-tv","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://www.craftbeermarket.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -29,6 +32,7 @@ window.venues = [
     time_start: "15:00", time_end: "19:00",
     deal: "$8 wine · $11 cocktails · $6 beer",
     vibes: ["upscale","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://www.oretta.to",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -37,6 +41,7 @@ window.venues = [
     time_start: "17:00", time_end: "19:00",
     deal: "$12 cocktails · $6 beer · $9 wine",
     vibes: ["lively","upscale","rooftop"], last_scraped: "2025-06",
+    website_url: "https://barotoronto.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -45,6 +50,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$7 Aperol Spritz · $8 Negroni · $6 wine",
     vibes: ["upscale","sidewalk-patio","lively"], last_scraped: "2025-06",
+    website_url: "https://gusto101.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -53,6 +59,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$6 craft beer · $9 wine · $10 cocktails",
     vibes: ["lively","dive-bar","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://www.barhopbar.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -61,6 +68,7 @@ window.venues = [
     time_start: "17:00", time_end: "19:00",
     deal: "$10 cocktails · Tue–Wed 50% off wine bottles",
     vibes: ["quiet","upscale"], last_scraped: "2025-06",
+    website_url: "https://www.lapinoubistro.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -69,6 +77,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$9 classic martini · $8 wine · $7 beer",
     vibes: ["upscale","quiet"], last_scraped: "2023-04",
+    website_url: "https://www.hyssteakhouse.com",
     source_url: "https://www.tastetoronto.com/guides/the-best-places-to-get-happy-hour-drinks-in-the-financial-district"
   },
   {
@@ -77,6 +86,7 @@ window.venues = [
     time_start: "14:30", time_end: "18:00",
     deal: "$9 cocktails · $9 wine · $6 beer",
     vibes: ["lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://thejonesesrestaurant.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -85,6 +95,7 @@ window.venues = [
     time_start: "14:00", time_end: "17:00",
     deal: "$7 wine · $7 beer",
     vibes: ["quiet","upscale"], last_scraped: "2025-06",
+    website_url: "https://www.cktl.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -93,6 +104,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$9 sparkling wine · $8 cocktails",
     vibes: ["upscale","quiet"], last_scraped: "2025-06",
+    website_url: "https://sipshucksip.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -101,6 +113,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$7 beer · $9 bourbon cocktails",
     vibes: ["lively","upscale","live-music"], last_scraped: "2025-06",
+    website_url: "https://www.thecarbonbar.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -109,6 +122,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$6 draft beer · $8 cocktails",
     vibes: ["lively","sports-tv","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://amsterdambeer.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -117,6 +131,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$10 cocktails · $8 wine · $7 beer",
     vibes: ["rooftop","upscale","lively"], last_scraped: "2025-06",
+    website_url: "https://www.harrietsrooftop.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -125,6 +140,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$10–12 cocktails · $13 wine",
     vibes: ["upscale","lively"], last_scraped: "2025-06",
+    website_url: "https://chotto-matte.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -133,6 +149,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$12 cocktails · $9 wine · $7 beer",
     vibes: ["rooftop","upscale","lively"], last_scraped: "2025-06",
+    website_url: "https://aerarestaurant.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -141,6 +158,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$7 beer · $9 cocktails · $8 wine",
     vibes: ["lively","upscale"], last_scraped: "2025-06",
+    website_url: "https://www.melroseonadelaide.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -149,6 +167,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$9 sangria · $8 wine · $10 cocktails",
     vibes: ["upscale","lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://besotoronto.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -157,6 +176,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$7 beer · $9 cocktails · $8 wine",
     vibes: ["lively","sidewalk-patio","sports-tv"], last_scraped: "2025-06",
+    website_url: "https://theparlourrestaurants.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
 
@@ -167,6 +187,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$12 cocktails · $8 sake",
     vibes: ["upscale","lively"], last_scraped: "2025-06",
+    website_url: "https://www.minamitoronto.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -175,6 +196,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$10 cocktails · $8 wine · $6 beer",
     vibes: ["upscale","lively"], last_scraped: "2025-06",
+    website_url: "https://weslodge.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -183,6 +205,7 @@ window.venues = [
     time_start: "17:00", time_end: "19:00",
     deal: "50% off cocktails · wine · beer",
     vibes: ["lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://www.silenth.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -191,6 +214,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$5 vodka highball · $6.50 house wine · $6 beer",
     vibes: ["lively","sports-tv"], last_scraped: "2025-06",
+    website_url: "https://joeyrestaurants.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -199,6 +223,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$10 cocktails · $7 beer · $8 wine",
     vibes: ["lively","upscale"], last_scraped: "2025-06",
+    website_url: "https://earls.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -207,6 +232,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$12 cocktails · $9 wine · $7 beer",
     vibes: ["upscale","rooftop"], last_scraped: "2025-06",
+    website_url: "https://www.thechasetoronto.com",
     source_url: "https://www.tastetoronto.com/guides/the-best-places-to-get-happy-hour-drinks-in-the-financial-district"
   },
   {
@@ -215,6 +241,7 @@ window.venues = [
     time_start: "17:00", time_end: "19:00",
     deal: "$9 cocktails · $7 beer · $8 wine",
     vibes: ["lively","upscale"], last_scraped: "2025-06",
+    website_url: "https://buca.ca/bar-buca/",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -223,6 +250,7 @@ window.venues = [
     time_start: "14:00", time_end: "17:00",
     deal: "$6–8 beer · $8–10 cocktails · $6 wine",
     vibes: ["lively","upscale"], last_scraped: "2026-06",
+    website_url: "https://www.cactusclubcafe.com/locations/first-canadian-place/",
     source_url: "https://www.cactusclubcafe.com/locations/first-canadian-place/menu/happy-hour/"
   },
   {
@@ -231,6 +259,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$8 cocktails · $7 wine · $6 beer",
     vibes: ["upscale","lively"], last_scraped: "2025-06",
+    website_url: "https://richmondstation.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -239,6 +268,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$8 wine · $10 cocktails · $6 beer",
     vibes: ["upscale","quiet"], last_scraped: "2025-06",
+    website_url: "https://figotoronto.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -247,6 +277,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$9 wine · $11 cocktails · $7 beer",
     vibes: ["upscale","quiet"], last_scraped: "2025-06",
+    website_url: "https://www.biffsbistro.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -255,6 +286,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$9 cocktails · $8 wine · $7 beer",
     vibes: ["upscale","quiet"], last_scraped: "2023-04",
+    website_url: "https://www.jumprestaurant.com",
     source_url: "https://www.tastetoronto.com/guides/the-best-places-to-get-happy-hour-drinks-in-the-financial-district"
   },
   {
@@ -263,6 +295,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$12 martinis · $9 wine · $8 beer",
     vibes: ["upscale","quiet"], last_scraped: "2025-06",
+    website_url: "https://mcewangroup.ca/bymark-restaurant/",
     source_url: "https://www.tastetoronto.com/guides/the-best-places-to-get-happy-hour-drinks-in-the-financial-district"
   },
   {
@@ -271,6 +304,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$10 cocktails · $9 wine · $7 beer",
     vibes: ["upscale","quiet"], last_scraped: "2025-06",
+    website_url: "https://harbour60.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -279,6 +313,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$6 beer · $9 cocktails · $7 wine",
     vibes: ["lively","sports-tv"], last_scraped: "2025-06",
+    website_url: "https://www.therecroom.com/toronto-roundhouse",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -287,6 +322,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$10 cocktails · $9 wine",
     vibes: ["upscale","quiet"], last_scraped: "2025-06",
+    website_url: "https://www.jacobssteakhouse.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
 
@@ -297,6 +333,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$6 drafts · $5 cans",
     vibes: ["lively","sidewalk-patio","dive-bar"], last_scraped: "2025-06",
+    website_url: "https://bellwoodsbrewery.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -305,6 +342,7 @@ window.venues = [
     time_start: "18:00", time_end: "21:00",
     deal: "50% off wine bottles",
     vibes: ["quiet","lively"], last_scraped: "2025-06",
+    website_url: "https://www.thepaintedlady.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -313,6 +351,7 @@ window.venues = [
     time_start: "17:00", time_end: "19:00",
     deal: "$9 cocktails · $8 wine · $6 beer",
     vibes: ["upscale","lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://barromatoronto.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -321,6 +360,7 @@ window.venues = [
     time_start: "14:00", time_end: "17:00",
     deal: "$6 beer · $9 cocktails",
     vibes: ["lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://centralrestaurants.ca/locations/toronto-ossington",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -329,6 +369,7 @@ window.venues = [
     time_start: "17:30", time_end: "19:30",
     deal: "50% off wine bottles · $10 martinis",
     vibes: ["upscale","quiet"], last_scraped: "2025-06",
+    website_url: "https://mamakas.ca/bar-koukla/",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -337,6 +378,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$6 beer · $8 cocktails · $7 wine",
     vibes: ["lively","sidewalk-patio","dive-bar"], last_scraped: "2025-06",
+    website_url: "https://www.foxonjohn.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -345,6 +387,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$9 cocktails · $7 wine",
     vibes: ["upscale","lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://azhartoronto.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -353,6 +396,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$7 natural wine · $8 cocktails · $5 beer",
     vibes: ["quiet","lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://www.lulubar.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -361,6 +405,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$8 margaritas · $6 beer",
     vibes: ["lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://www.reposadobar.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -369,6 +414,7 @@ window.venues = [
     time_start: "17:00", time_end: "19:00",
     deal: "$9 cocktails · $7 wine",
     vibes: ["quiet","upscale"], last_scraped: "2025-06",
+    website_url: "https://www.barmordecai.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -377,6 +423,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$5 beer · $7 cocktails",
     vibes: ["dive-bar","live-music","lively"], last_scraped: "2025-06",
+    website_url: "https://www.dakotatavern.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
 
@@ -387,6 +434,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$6 beer · $10 cocktails",
     vibes: ["lively","rooftop","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://thedrake.ca/restaurant/sky-yard/",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -395,6 +443,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "50% off wine · $6 beer",
     vibes: ["quiet","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://www.goodcompanyto.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -411,6 +460,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$5 beer · $7 highballs",
     vibes: ["lively","dive-bar","live-music"], last_scraped: "2025-06",
+    website_url: "https://horseshoetavern.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -419,6 +469,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$9 tiki cocktails · $7 beer",
     vibes: ["lively","quiet"], last_scraped: "2025-06",
+    website_url: "https://shamefultikiroom.com/toronto/",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -427,6 +478,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$5 beer · $7 highballs",
     vibes: ["dive-bar","lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://www.therhino.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -435,6 +487,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$6 beer · $8 cocktails",
     vibes: ["lively","dive-bar"], last_scraped: "2025-06",
+    website_url: "https://www.partsandlabour.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -443,6 +496,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$7 cocktails · $5 beer",
     vibes: ["lively","dive-bar"], last_scraped: "2025-06",
+    website_url: "https://www.bangarangbar.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
 
@@ -461,6 +515,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$7 cocktails · $5 pints",
     vibes: ["lively","dive-bar"], last_scraped: "2025-06",
+    website_url: "https://www.thelockhart.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -469,6 +524,7 @@ window.venues = [
     time_start: "17:30", time_end: "19:30",
     deal: "$6 beer · $10 cocktails",
     vibes: ["lively","upscale"], last_scraped: "2025-06",
+    website_url: "https://bigtrouble.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -477,6 +533,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$10 Negroni · $6 beer",
     vibes: ["quiet","lively"], last_scraped: "2025-06",
+    website_url: "https://www.thelovelesscafe.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
 
@@ -487,6 +544,7 @@ window.venues = [
     time_start: "15:00", time_end: "19:00",
     deal: "$6 craft beer · $8 cocktails",
     vibes: ["lively","dive-bar"], last_scraped: "2025-06",
+    website_url: "https://trinitycommon.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -495,6 +553,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$6 beer · $9 cocktails",
     vibes: ["lively","upscale"], last_scraped: "2025-06",
+    website_url: "https://birreriavolo.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -503,6 +562,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$6 beer · $5 cans",
     vibes: ["lively","dive-bar","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://follybrewpub.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -511,6 +571,7 @@ window.venues = [
     time_start: "17:30", time_end: "19:30",
     deal: "$10 cocktails · $8 wine",
     vibes: ["upscale","quiet"], last_scraped: "2025-06",
+    website_url: "https://www.contradarestaurant.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -519,6 +580,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$6 beer · $8 cocktails",
     vibes: ["quiet","live-music"], last_scraped: "2025-06",
+    website_url: "https://www.theemmetray.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -527,6 +589,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$5 beer · $6 highballs",
     vibes: ["dive-bar","lively"], last_scraped: "2025-06",
+    website_url: "https://thehandlebar.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -535,6 +598,7 @@ window.venues = [
     time_start: "17:00", time_end: "19:00",
     deal: "$8 cocktails · $7 wine",
     vibes: ["quiet","lively"], last_scraped: "2025-06",
+    website_url: "https://www.dromtaberna.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
 
@@ -545,6 +609,7 @@ window.venues = [
     time_start: "18:00", time_end: "20:00",
     deal: "$7 natural wine · $8 cocktails",
     vibes: ["quiet","upscale","lively"], last_scraped: "2025-06",
+    website_url: "https://civillibertiesbar.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -553,6 +618,7 @@ window.venues = [
     time_start: "17:00", time_end: "18:00",
     deal: "$7 beer · $10 wine",
     vibes: ["quiet","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://paradisegrapevine.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -561,6 +627,7 @@ window.venues = [
     time_start: "17:00", time_end: "20:00",
     deal: "$6 beer · 10% off all drinks",
     vibes: ["lively","dive-bar"], last_scraped: "2025-06",
+    website_url: "https://www.tallboyscraft.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -569,6 +636,7 @@ window.venues = [
     time_start: "17:00", time_end: "19:00",
     deal: "$9 cocktails · $7 beer",
     vibes: ["lively","upscale"], last_scraped: "2025-06",
+    website_url: "https://www.electricbillbar.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -577,6 +645,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$5 pints · $4 highballs",
     vibes: ["dive-bar","lively"], last_scraped: "2025-06",
+    website_url: "https://pauperspub.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -585,6 +654,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$8 mezcal cocktails · $6 beer",
     vibes: ["lively","upscale"], last_scraped: "2025-06",
+    website_url: "https://elreybar.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
 
@@ -595,6 +665,7 @@ window.venues = [
     time_start: "14:30", time_end: "16:30",
     deal: "$10 cocktails · $10 wine",
     vibes: ["upscale","quiet"], last_scraped: "2025-06",
+    website_url: "https://thealobar.com/alobar-yorkville/",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -603,6 +674,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$10 cocktails · $7 beer",
     vibes: ["lively","upscale"], last_scraped: "2026-06",
+    website_url: "https://earls.ca/locations/yorkville/",
     source_url: "https://earls.ca/locations/yorkville/menu/"
   },
   {
@@ -611,6 +683,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$10 cocktails · $9 wine",
     vibes: ["upscale","lively"], last_scraped: "2025-06",
+    website_url: "https://stksteakhouse.com/en-us/location/toronto/",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -619,6 +692,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$6 beer · $8 cocktails",
     vibes: ["lively","sidewalk-patio","sports-tv"], last_scraped: "2025-06",
+    website_url: "https://hemingways.to",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -627,6 +701,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$7 beer · $9 cocktails · $8 wine",
     vibes: ["lively","upscale","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://theoxley.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -635,6 +710,7 @@ window.venues = [
     time_start: "17:00", time_end: "19:00",
     deal: "$9 cocktails · $7 wine",
     vibes: ["upscale","lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://www.barreyna.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -643,6 +719,7 @@ window.venues = [
     time_start: "14:00", time_end: "18:00",
     deal: "$7 beer · $12 cocktails",
     vibes: ["lively","upscale"], last_scraped: "2025-09",
+    website_url: "https://www.maisonselby.com",
     source_url: "https://www.maisonselby.com/news/happy-hour/"
   },
   {
@@ -651,6 +728,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$9 wine · $11 cocktails",
     vibes: ["upscale","quiet"], last_scraped: "2025-06",
+    website_url: "https://www.cibo.menu",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
 
@@ -661,6 +739,7 @@ window.venues = [
     time_start: "12:00", time_end: "17:00",
     deal: "$6 beer · $6 tequila shots",
     vibes: ["lively"], last_scraped: "2025-06",
+    website_url: "https://churchstgarage.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -669,6 +748,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$6 beer · $8 cocktails",
     vibes: ["lively","dive-bar"], last_scraped: "2025-06",
+    website_url: "https://www.stormcrow.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -677,6 +757,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$6 beer · $8 sake · $9 cocktails",
     vibes: ["lively","upscale"], last_scraped: "2025-06",
+    website_url: "https://kinkaizakaya.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -685,6 +766,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$6 craft beer · $8 cocktails",
     vibes: ["lively","dive-bar"], last_scraped: "2025-06",
+    website_url: "https://www.barvolo.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -711,6 +793,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$8 natural wine · $9 cocktails",
     vibes: ["quiet","sidewalk-patio","upscale"], last_scraped: "2025-06",
+    website_url: "https://www.pompette.ca/barpompette",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -719,6 +802,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$6 pints · $5 cans",
     vibes: ["lively","dive-bar","sports-tv"], last_scraped: "2025-06",
+    website_url: "https://www.leftfieldbrewery.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -727,6 +811,7 @@ window.venues = [
     time_start: "17:00", time_end: "19:00",
     deal: "$6 beer · $10 cocktails",
     vibes: ["lively","dive-bar","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://comradetoronto.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -735,6 +820,7 @@ window.venues = [
     time_start: "17:00", time_end: "19:00",
     deal: "$6 pints · $8 cocktails",
     vibes: ["lively","dive-bar"], last_scraped: "2025-06",
+    website_url: "https://eastboundbeer.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -743,6 +829,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$9 cocktails · $8 wine · $6 beer",
     vibes: ["upscale","rooftop","lively"], last_scraped: "2025-06",
+    website_url: "https://www.thebroadviewhotel.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -751,6 +838,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$6 pints · $5 cans",
     vibes: ["lively","dive-bar"], last_scraped: "2025-06",
+    website_url: "https://mascotbrewery.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
 
@@ -761,6 +849,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$8 mezcal margaritas · $6 beer",
     vibes: ["lively","upscale","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://elcatrin.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -769,6 +858,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$6 pints · $5 cans",
     vibes: ["lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://millstreetbrewery.com/toronto-beer-hall",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -777,6 +867,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$8 wine · $10 cocktails",
     vibes: ["upscale","quiet","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://clunybistro.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -785,6 +876,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$8 wine · $11 cocktails · $6 beer",
     vibes: ["upscale","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://gusto501.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -801,6 +893,7 @@ window.venues = [
     time_start: "14:00", time_end: "17:00",
     deal: "$6 beer · $7 highballs",
     vibes: ["lively","sports-tv"], last_scraped: "2025-06",
+    website_url: "https://www.scoreonking.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
 
@@ -811,6 +904,7 @@ window.venues = [
     time_start: "14:00", time_end: "17:00",
     deal: "$6 beer · $8 cocktails",
     vibes: ["lively","sports-tv"], last_scraped: "2025-06",
+    website_url: "https://localpubliceatery.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -819,6 +913,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$7 beer · $13 cocktails",
     vibes: ["lively","upscale","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://www.liberty-soho.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -827,6 +922,7 @@ window.venues = [
     time_start: "14:00", time_end: "17:00",
     deal: "$8 wine · $12 cocktails · $6 beer",
     vibes: ["upscale","lively"], last_scraped: "2025-06",
+    website_url: "https://www.nodoliberty.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -835,6 +931,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$6.25 pints · $7 wine · $10 cocktails",
     vibes: ["lively","sidewalk-patio"], last_scraped: "2024-06",
+    website_url: "https://www.libertycommons.ca",
     source_url: "https://www.oliverbonacini.com/news/happy-hour-toronto/"
   },
 
@@ -845,6 +942,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$6 pints · $5 cans",
     vibes: ["lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://www.bloodbrothersbrewing.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
 
@@ -855,6 +953,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$10 cocktails · $8 wine",
     vibes: ["upscale","rooftop","lively"], last_scraped: "2025-06",
+    website_url: "https://www.thompsonhotels.com/hotels/canada/toronto/thompson-toronto",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -863,6 +962,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$5 beer · $6 highballs · $5 wine",
     vibes: ["lively","dive-bar"], last_scraped: "2025-06",
+    website_url: "https://warehousegroup.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
 
@@ -873,6 +973,7 @@ window.venues = [
     time_start: "15:00", time_end: "19:00",
     deal: "$8 cocktails · $6 beer",
     vibes: ["lively","sidewalk-patio","sports-tv"], last_scraped: "2025-06",
+    website_url: "https://www.rubysohobar.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -881,6 +982,7 @@ window.venues = [
     time_start: "15:30", time_end: "19:00",
     deal: "$10 cocktails · $8 wine · $4.50 shots",
     vibes: ["lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://pigeoncoffee.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -889,6 +991,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "50% off tequila · $9 cocktails · $5 beer",
     vibes: ["lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://www.anejo.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -897,6 +1000,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$6 beer · $5 cans",
     vibes: ["lively","sidewalk-patio","dive-bar"], last_scraped: "2025-06",
+    website_url: "https://wvrst.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -905,6 +1009,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$9 cocktails · $8 wine · $7 beer",
     vibes: ["upscale","lively"], last_scraped: "2025-06",
+    website_url: "https://buca.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -913,6 +1018,7 @@ window.venues = [
     time_start: "17:00", time_end: "19:00",
     deal: "$12 cocktails · $9 wine · $8 beer",
     vibes: ["rooftop","upscale","lively"], last_scraped: "2025-06",
+    website_url: "https://chezlavelle.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -921,6 +1027,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$9 cocktails · $8 wine · $7 beer",
     vibes: ["upscale","quiet"], last_scraped: "2025-06",
+    website_url: "https://www.lumarestaurant.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -929,6 +1036,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$9 cocktails · $7 wine · $6 beer",
     vibes: ["lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://www.brassaii.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -937,6 +1045,7 @@ window.venues = [
     time_start: "15:00", time_end: "19:00",
     deal: "$5 beer · $6 highballs",
     vibes: ["dive-bar","lively"], last_scraped: "2025-06",
+    website_url: "https://wheatsheaftavern.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -945,6 +1054,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$7 cocktails · $6 beer",
     vibes: ["lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://www.archive909.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
 
@@ -955,6 +1065,7 @@ window.venues = [
     time_start: "14:30", time_end: "17:30",
     deal: "$6 beer · $7 wine · $8 cocktails",
     vibes: ["upscale","quiet"], last_scraped: "2023-09",
+    website_url: "https://blackandbluesteakhouse.ca",
     source_url: "https://www.tastetoronto.com/spots/black-and-blue"
   },
   {
@@ -963,6 +1074,7 @@ window.venues = [
     time_start: "16:30", time_end: "18:00",
     deal: "$12 cocktails · $10 wine",
     vibes: ["upscale","rooftop"], last_scraped: "2023-04",
+    website_url: "https://www.canoerestaurant.com",
     source_url: "https://www.tastetoronto.com/guides/the-best-places-to-get-happy-hour-drinks-in-the-financial-district"
   },
   {
@@ -971,6 +1083,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$7 wine · $9 cocktails",
     vibes: ["upscale","quiet"], last_scraped: "2025-06",
+    website_url: "https://www.terroni.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -979,6 +1092,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$6 beer · $8 cocktails · $7 wine",
     vibes: ["lively"], last_scraped: "2025-06",
+    website_url: "https://thestrathpub.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1027,6 +1141,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$6 craft beer · $8 cocktails",
     vibes: ["lively","dive-bar"], last_scraped: "2025-06",
+    website_url: "https://cestwhat.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1035,6 +1150,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$6 beer · $7 highballs",
     vibes: ["lively","sports-tv"], last_scraped: "2025-06",
+    website_url: "https://fionnmaccools.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1043,6 +1159,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$6 beer · $7 highballs",
     vibes: ["dive-bar","lively"], last_scraped: "2025-06",
+    website_url: "https://brazenhead.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
 
@@ -1053,6 +1170,7 @@ window.venues = [
     time_start: "17:00", time_end: "20:00",
     deal: "$7 cocktails · $6 beer",
     vibes: ["lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://pettycashtoronto.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1061,6 +1179,7 @@ window.venues = [
     time_start: "14:00", time_end: "17:00",
     deal: "50% off wine · $10 cocktails",
     vibes: ["upscale","lively"], last_scraped: "2025-06",
+    website_url: "https://www.bridgettebar.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1069,6 +1188,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$7 beer · $9 cocktails",
     vibes: ["lively","sports-tv"], last_scraped: "2025-06",
+    website_url: "https://www.ntnl.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1077,6 +1197,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$8 wine · $10 cocktails · $6 beer",
     vibes: ["upscale","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://barsataberna.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1085,6 +1206,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$7 beer · $9 cocktails · $8 wine",
     vibes: ["lively"], last_scraped: "2025-06",
+    website_url: "https://thecitizento.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1093,6 +1215,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$10 cocktails · $8 wine",
     vibes: ["upscale","quiet"], last_scraped: "2025-06",
+    website_url: "https://www.sohohoteltoronto.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
 
@@ -1103,6 +1226,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$10 cocktails · $9 wine · $7 beer",
     vibes: ["upscale","quiet"], last_scraped: "2025-06",
+    website_url: "https://www.notabenerestaurant.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1111,6 +1235,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$9 cocktails · $7 wine",
     vibes: ["upscale","lively"], last_scraped: "2025-06",
+    website_url: "https://www.plantarestaurants.com/location/planta-queen-toronto/",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1119,6 +1244,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$11 cocktails · $8 wine",
     vibes: ["upscale","quiet"], last_scraped: "2025-06",
+    website_url: "https://www.barchef.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1127,6 +1253,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$7 beer · $9 cocktails",
     vibes: ["lively","sports-tv"], last_scraped: "2025-06",
+    website_url: "https://www.theballroombowl.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1135,6 +1262,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$9 cocktails · $7 wine · $6 beer",
     vibes: ["upscale","lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://www.omaw.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1143,6 +1271,7 @@ window.venues = [
     time_start: "17:00", time_end: "19:00",
     deal: "$8 cocktails · $6 beer",
     vibes: ["lively","upscale"], last_scraped: "2025-06",
+    website_url: "https://fifthsocialclub.thefifth.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1151,6 +1280,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$10 cocktails · $8 wine",
     vibes: ["upscale","lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://acehotel.com/toronto/eat-drink/",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1159,6 +1289,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$8 cocktails · $6 beer",
     vibes: ["lively"], last_scraped: "2025-06",
+    website_url: "https://www.lost577.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1167,6 +1298,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$10 cocktails · $8 wine",
     vibes: ["upscale","quiet"], last_scraped: "2025-06",
+    website_url: "https://mirarestaurant.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
 
@@ -1177,6 +1309,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$8 cocktails · $7 wine · $6 beer",
     vibes: ["quiet","upscale"], last_scraped: "2025-06",
+    website_url: "https://www.boehmer.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1185,6 +1318,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$6 beer · $8 cocktails",
     vibes: ["lively","dive-bar","live-music"], last_scraped: "2025-06",
+    website_url: "https://www.garrisontoronto.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1193,6 +1327,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$5 beer · $7 cocktails",
     vibes: ["lively","dive-bar"], last_scraped: "2025-06",
+    website_url: "https://www.getwellbar.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1201,6 +1336,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$10 cocktails · $7 wine",
     vibes: ["upscale","quiet"], last_scraped: "2025-06",
+    website_url: "https://chanteclerto.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1209,6 +1345,7 @@ window.venues = [
     time_start: "17:00", time_end: "19:00",
     deal: "$5 beer · $6 cocktails",
     vibes: ["lively","dive-bar"], last_scraped: "2025-06",
+    website_url: "https://www.wrongbar.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1217,6 +1354,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$6 beer · $8 cocktails",
     vibes: ["lively","live-music"], last_scraped: "2025-06",
+    website_url: "https://www.gladstonehouse.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
 
@@ -1227,6 +1365,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$5 pints · $6 highballs",
     vibes: ["dive-bar","lively","live-music"], last_scraped: "2025-06",
+    website_url: "https://www.sneakydees.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1235,6 +1374,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$5 pints · $7 highballs",
     vibes: ["dive-bar","lively","live-music"], last_scraped: "2025-06",
+    website_url: "https://www.themonarchtavern.com",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1253,6 +1393,7 @@ window.venues = [
     time_start: "15:00", time_end: "18:00",
     deal: "$8 cocktails · $7 wine",
     vibes: ["upscale","quiet","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://boxcarsocial.ca/pages/harbourfront",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
   {
@@ -1261,6 +1402,7 @@ window.venues = [
     time_start: "16:00", time_end: "18:00",
     deal: "$8 cocktails · $7 wine",
     vibes: ["upscale","quiet"], last_scraped: "2025-06",
+    website_url: "https://mildreds.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   },
 
@@ -1279,6 +1421,7 @@ window.venues = [
     time_start: "16:00", time_end: "19:00",
     deal: "$8 cocktails · $6 beer",
     vibes: ["lively","sidewalk-patio"], last_scraped: "2025-06",
+    website_url: "https://www.recesstoronto.ca",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   }
 ];

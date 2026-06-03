@@ -212,6 +212,7 @@ function renderMap(venues) {
       `<div class="popup-deal">${v.deal}</div>` +
       `<div class="popup-hours">${fmtDays(v.days)} · ${fmtTime(v.time_start)}–${fmtTime(v.time_end)}</div>` +
       `<div class="popup-vibes">${v.vibes.map(vibe => `<span class="vibe-tag">${vibe}</span>`).join('')}</div>` +
+      (v.website_url ? `<div class="popup-website"><a href="${v.website_url}" target="_blank" rel="noopener">Official site ↗</a></div>` : '') +
       `<div class="popup-source"><a href="${v.source_url}" target="_blank" rel="noopener">View source ↗</a></div>`,
       { maxWidth: 240 }
     );
@@ -251,7 +252,10 @@ function renderList(venues) {
         <div class="card-deal">${v.deal}</div>
         <div class="card-footer">
           <div class="card-vibes">${v.vibes.map(vibe => `<span class="vibe-tag">${vibe}</span>`).join('')}</div>
-          <div class="card-updated">Updated ${fmtScrapeDate(v.last_scraped)}</div>
+          <div class="card-links">
+            ${v.website_url ? `<a class="card-link" href="${v.website_url}" target="_blank" rel="noopener">Official site ↗</a>` : ''}
+            <span class="card-updated">Updated ${fmtScrapeDate(v.last_scraped)}</span>
+          </div>
         </div>
       </div>`;
   }).join('');

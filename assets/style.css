@@ -346,6 +346,22 @@ body {
   font-weight: 500;
 }
 
+.card-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-link {
+  font-size: 0.62rem;
+  color: var(--amber);
+  text-decoration: none;
+  opacity: 0.8;
+  white-space: nowrap;
+}
+
+.card-link:hover { opacity: 1; }
+
 .card-updated {
   font-size: 0.62rem;
   color: var(--text-muted);
@@ -427,6 +443,9 @@ body {
   margin-bottom: 7px;
 }
 
+.popup-website { margin-bottom: 3px; }
+
+.popup-website a,
 .popup-source a {
   font-size: 0.68rem;
   color: var(--amber);
@@ -434,6 +453,7 @@ body {
   opacity: 0.8;
 }
 
+.popup-website a:hover,
 .popup-source a:hover { opacity: 1; }
 
 /* ─── Mobile ─── */
