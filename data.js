@@ -864,5 +864,421 @@ window.venues = [
     deal: "$5 beer · $6 highballs · $5 wine",
     vibes: ["lively","dive-bar"], last_scraped: "2026-05",
     source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+
+  // ─── King Street (additional downtown) ───────────────────────────────────
+  {
+    id: 106, name: "Ruby Soho", neighbourhood: "King West", address: "587 King St W",
+    lat: 43.6443, lng: -79.4030, days: ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+    time_start: "15:00", time_end: "19:00",
+    deal: "$8 cocktails · $6 beer",
+    vibes: ["lively","sidewalk-patio","sports-tv"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 107, name: "Pigeon", neighbourhood: "Entertainment District", address: "337 King St W",
+    lat: 43.6449, lng: -79.3940, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "15:30", time_end: "19:00",
+    deal: "$10 cocktails · $8 wine · $4.50 shots",
+    vibes: ["lively","sidewalk-patio"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 108, name: "Anejo", neighbourhood: "King West", address: "475 King St W",
+    lat: 43.6448, lng: -79.3993, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "18:00",
+    deal: "50% off tequila · $9 cocktails · $5 beer",
+    vibes: ["lively","sidewalk-patio"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 109, name: "Wvrst", neighbourhood: "King West", address: "609 King St W",
+    lat: 43.6444, lng: -79.4040, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "15:00", time_end: "18:00",
+    deal: "$6 beer · $5 cans",
+    vibes: ["lively","sidewalk-patio","dive-bar"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 110, name: "Buca", neighbourhood: "King West", address: "604 King St W",
+    lat: 43.6444, lng: -79.4037, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$9 cocktails · $8 wine · $7 beer",
+    vibes: ["upscale","lively"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 111, name: "Lavelle", neighbourhood: "King West", address: "627 King St W",
+    lat: 43.6444, lng: -79.4048, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "17:00", time_end: "19:00",
+    deal: "$12 cocktails · $9 wine · $8 beer",
+    vibes: ["rooftop","upscale","lively"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 112, name: "Luma", neighbourhood: "Entertainment District", address: "350 King St W",
+    lat: 43.6449, lng: -79.3943, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "18:00",
+    deal: "$9 cocktails · $8 wine · $7 beer",
+    vibes: ["upscale","quiet"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 113, name: "Brassaii", neighbourhood: "King West", address: "461 King St W",
+    lat: 43.6447, lng: -79.3983, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$9 cocktails · $7 wine · $6 beer",
+    vibes: ["lively","sidewalk-patio"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 114, name: "Wheat Sheaf Tavern", neighbourhood: "King West", address: "667 King St W",
+    lat: 43.6444, lng: -79.4060, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "15:00", time_end: "19:00",
+    deal: "$5 beer · $6 highballs",
+    vibes: ["dive-bar","lively"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 115, name: "Archive Bar & Kitchen", neighbourhood: "King West", address: "909 King St W",
+    lat: 43.6440, lng: -79.4197, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$7 cocktails · $6 beer",
+    vibes: ["lively","sidewalk-patio"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+
+  // ─── Financial District (additional) ──────────────────────────────────────
+  {
+    id: 116, name: "Black + Blue", neighbourhood: "Financial District", address: "130 King St W",
+    lat: 43.6480, lng: -79.3851, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "14:30", time_end: "17:30",
+    deal: "$6 beer · $7 wine · $8 cocktails",
+    vibes: ["upscale","quiet"], last_scraped: "2026-05",
+    source_url: "https://www.tastetoronto.com/spots/black-and-blue"
+  },
+  {
+    id: 117, name: "Canoe Restaurant", neighbourhood: "Financial District", address: "66 Wellington St W",
+    lat: 43.6477, lng: -79.3836, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:30", time_end: "18:00",
+    deal: "$12 cocktails · $10 wine",
+    vibes: ["upscale","rooftop"], last_scraped: "2026-05",
+    source_url: "https://www.tastetoronto.com/guides/the-best-places-to-get-happy-hour-drinks-in-the-financial-district"
+  },
+  {
+    id: 118, name: "Terroni Adelaide", neighbourhood: "Financial District", address: "57 Adelaide St E",
+    lat: 43.6496, lng: -79.3775, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$7 wine · $9 cocktails",
+    vibes: ["upscale","quiet"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 119, name: "The Strathcona Bar", neighbourhood: "Financial District", address: "60 York St",
+    lat: 43.6476, lng: -79.3829, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "15:00", time_end: "18:00",
+    deal: "$6 beer · $8 cocktails · $7 wine",
+    vibes: ["lively"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 120, name: "Speakeasy 21", neighbourhood: "Financial District", address: "21 Adelaide St W",
+    lat: 43.6496, lng: -79.3814, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "15:00", time_end: "18:00",
+    deal: "$7 beer · $12 cocktails · $10 wine",
+    vibes: ["lively","upscale"], last_scraped: "2026-05",
+    source_url: "https://www.tastetoronto.com/guides/the-best-places-to-get-happy-hour-drinks-in-the-financial-district"
+  },
+  {
+    id: 121, name: "Assembly Bar", neighbourhood: "Financial District", address: "111 Richmond St W",
+    lat: 43.6510, lng: -79.3873, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "15:00", time_end: "18:00",
+    deal: "$7 beer · $8 cocktails",
+    vibes: ["lively"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 122, name: "Wayne Gretzky's", neighbourhood: "Entertainment District", address: "99 Blue Jays Way",
+    lat: 43.6449, lng: -79.3912, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "15:00", time_end: "18:00",
+    deal: "$6 beer · $8 cocktails",
+    vibes: ["lively","sports-tv"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 123, name: "Colette Grand Café", neighbourhood: "Financial District", address: "79 Wellington St W",
+    lat: 43.6476, lng: -79.3840, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "18:00",
+    deal: "$10 wine · $12 cocktails",
+    vibes: ["upscale","quiet"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 124, name: "Reds Wine Tavern", neighbourhood: "Financial District", address: "77 Adelaide St W",
+    lat: 43.6496, lng: -79.3836, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "18:00",
+    deal: "$8 wine · $10 cocktails · $7 beer",
+    vibes: ["upscale","quiet"], last_scraped: "2026-05",
+    source_url: "https://www.tastetoronto.com/guides/the-best-places-to-get-happy-hour-drinks-in-the-financial-district"
+  },
+  {
+    id: 125, name: "C'est What", neighbourhood: "Old Town", address: "67 Front St E",
+    lat: 43.6463, lng: -79.3748, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "15:00", time_end: "18:00",
+    deal: "$6 craft beer · $8 cocktails",
+    vibes: ["lively","dive-bar"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 126, name: "Fionn MacCool's", neighbourhood: "St Lawrence", address: "70 The Esplanade",
+    lat: 43.6446, lng: -79.3730, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "15:00", time_end: "18:00",
+    deal: "$6 beer · $7 highballs",
+    vibes: ["lively","sports-tv"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 127, name: "Brazen Head Irish Pub", neighbourhood: "Old Town", address: "165 Front St E",
+    lat: 43.6454, lng: -79.3666, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "15:00", time_end: "18:00",
+    deal: "$6 beer · $7 highballs",
+    vibes: ["dive-bar","lively"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+
+  // ─── Adelaide / Wellington / Front (additional) ───────────────────────────
+  {
+    id: 128, name: "Petty Cash", neighbourhood: "Entertainment District", address: "487 Adelaide St W",
+    lat: 43.6479, lng: -79.4000, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "17:00", time_end: "20:00",
+    deal: "$7 cocktails · $6 beer",
+    vibes: ["lively","sidewalk-patio"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 129, name: "Bridgette Bar", neighbourhood: "King West", address: "423 Wellington St W",
+    lat: 43.6424, lng: -79.3999, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "14:00", time_end: "17:00",
+    deal: "50% off wine · $10 cocktails",
+    vibes: ["upscale","lively"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 130, name: "National Toronto", neighbourhood: "Entertainment District", address: "444 Front St W",
+    lat: 43.6427, lng: -79.4003, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "15:00", time_end: "18:00",
+    deal: "$7 beer · $9 cocktails",
+    vibes: ["lively","sports-tv"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 131, name: "Barsa Taberna", neighbourhood: "Entertainment District", address: "345 Adelaide St W",
+    lat: 43.6479, lng: -79.3940, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$8 wine · $10 cocktails · $6 beer",
+    vibes: ["upscale","sidewalk-patio"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 132, name: "The Citizen Bar", neighbourhood: "Entertainment District", address: "232 Adelaide St W",
+    lat: 43.6479, lng: -79.3891, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "15:00", time_end: "18:00",
+    deal: "$7 beer · $9 cocktails · $8 wine",
+    vibes: ["lively"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 133, name: "Soho Metropolitan Bar", neighbourhood: "Entertainment District", address: "318 Wellington St W",
+    lat: 43.6437, lng: -79.3930, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "18:00",
+    deal: "$10 cocktails · $8 wine",
+    vibes: ["upscale","quiet"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+
+  // ─── Queen West / Entertainment District (additional) ─────────────────────
+  {
+    id: 134, name: "Nota Bene", neighbourhood: "Entertainment District", address: "180 Queen St W",
+    lat: 43.6513, lng: -79.3893, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "18:00",
+    deal: "$10 cocktails · $9 wine · $7 beer",
+    vibes: ["upscale","quiet"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 135, name: "Planta Queen", neighbourhood: "Entertainment District", address: "180 Queen St W",
+    lat: 43.6513, lng: -79.3893, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "18:00",
+    deal: "$9 cocktails · $7 wine",
+    vibes: ["upscale","lively"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 136, name: "Bar Chef", neighbourhood: "Queen West", address: "472 Queen St W",
+    lat: 43.6487, lng: -79.3983, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$11 cocktails · $8 wine",
+    vibes: ["upscale","quiet"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 137, name: "The Ballroom Bowl", neighbourhood: "Entertainment District", address: "145 John St",
+    lat: 43.6490, lng: -79.3893, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "15:00", time_end: "18:00",
+    deal: "$7 beer · $9 cocktails",
+    vibes: ["lively","sports-tv"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 138, name: "Omaw", neighbourhood: "Queen West", address: "685 Queen St W",
+    lat: 43.6485, lng: -79.4077, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$9 cocktails · $7 wine · $6 beer",
+    vibes: ["upscale","lively","sidewalk-patio"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 139, name: "The Fifth Social Club", neighbourhood: "Entertainment District", address: "225 Richmond St W",
+    lat: 43.6508, lng: -79.3893, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "17:00", time_end: "19:00",
+    deal: "$8 cocktails · $6 beer",
+    vibes: ["lively","upscale"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 140, name: "The Ace Hotel Bar", neighbourhood: "Entertainment District", address: "51 Camden St",
+    lat: 43.6453, lng: -79.3960, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$10 cocktails · $8 wine",
+    vibes: ["upscale","lively","sidewalk-patio"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 141, name: "Lost + Found", neighbourhood: "Entertainment District", address: "35 Mercer St",
+    lat: 43.6451, lng: -79.3935, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$8 cocktails · $6 beer",
+    vibes: ["lively"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 142, name: "Mira Restaurant", neighbourhood: "Entertainment District", address: "21 Mercer St",
+    lat: 43.6452, lng: -79.3926, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$10 cocktails · $8 wine",
+    vibes: ["upscale","quiet"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+
+  // ─── Ossington / Parkdale (additional) ───────────────────────────────────
+  {
+    id: 143, name: "Boehmer", neighbourhood: "Ossington", address: "93 Ossington Ave",
+    lat: 43.6508, lng: -79.4208, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$8 cocktails · $7 wine · $6 beer",
+    vibes: ["quiet","upscale"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 144, name: "Garrison Toronto", neighbourhood: "Ossington", address: "1197 Dundas St W",
+    lat: 43.6541, lng: -79.4224, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$6 beer · $8 cocktails",
+    vibes: ["lively","dive-bar","live-music"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 145, name: "Get Well", neighbourhood: "Ossington", address: "1181 Dundas St W",
+    lat: 43.6540, lng: -79.4222, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$5 beer · $7 cocktails",
+    vibes: ["lively","dive-bar"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 146, name: "Chantecler", neighbourhood: "Parkdale", address: "1320 Queen St W",
+    lat: 43.6431, lng: -79.4441, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$10 cocktails · $7 wine",
+    vibes: ["upscale","quiet"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 147, name: "Wrongbar", neighbourhood: "Parkdale", address: "1279 Queen St W",
+    lat: 43.6431, lng: -79.4406, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "17:00", time_end: "19:00",
+    deal: "$5 beer · $6 cocktails",
+    vibes: ["lively","dive-bar"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 148, name: "Gladstone Hotel Bar", neighbourhood: "Parkdale", address: "1214 Queen St W",
+    lat: 43.6433, lng: -79.4349, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$6 beer · $8 cocktails",
+    vibes: ["lively","live-music"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+
+  // ─── Kensington / Little Italy / College (additional) ────────────────────
+  {
+    id: 149, name: "Sneaky Dee's", neighbourhood: "Little Italy", address: "431 College St",
+    lat: 43.6591, lng: -79.4074, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$5 pints · $6 highballs",
+    vibes: ["dive-bar","lively","live-music"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 150, name: "Monarch Tavern", neighbourhood: "Little Italy", address: "12 Clinton St",
+    lat: 43.6592, lng: -79.4127, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$5 pints · $7 highballs",
+    vibes: ["dive-bar","lively","live-music"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 151, name: "People's Eatery", neighbourhood: "Kensington Market", address: "307 Spadina Ave",
+    lat: 43.6559, lng: -79.3995, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$7 cocktails · $5 beer",
+    vibes: ["lively"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+
+  // ─── Harbourfront / Waterfront (additional) ───────────────────────────────
+  {
+    id: 152, name: "Boxcar Social Waterfront", neighbourhood: "Harbourfront", address: "235 Queens Quay W",
+    lat: 43.6383, lng: -79.3855, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "15:00", time_end: "18:00",
+    deal: "$8 cocktails · $7 wine",
+    vibes: ["upscale","quiet","sidewalk-patio"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 153, name: "Mildred's Temple Kitchen", neighbourhood: "Liberty Village", address: "85 Hanna Ave",
+    lat: 43.6381, lng: -79.4151, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "18:00",
+    deal: "$8 cocktails · $7 wine",
+    vibes: ["upscale","quiet"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+
+  // ─── Bloor West / West end (additional) ──────────────────────────────────
+  {
+    id: 154, name: "Brockton General", neighbourhood: "Bloor West", address: "1321 Bloor St W",
+    lat: 43.6655, lng: -79.4475, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$6 beer · $8 cocktails",
+    vibes: ["lively","dive-bar"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
+  },
+  {
+    id: 155, name: "Recess", neighbourhood: "Entertainment District", address: "1 Portland St",
+    lat: 43.6452, lng: -79.4047, days: ["Mon","Tue","Wed","Thu","Fri"],
+    time_start: "16:00", time_end: "19:00",
+    deal: "$8 cocktails · $6 beer",
+    vibes: ["lively","sidewalk-patio"], last_scraped: "2026-05",
+    source_url: "https://www.fringinto.com/best-happy-hours-toronto/"
   }
 ];
